@@ -20,10 +20,36 @@ The following R packages are required:
 - `parallel`
 - `fda`
 
-Install them from CRAN:
-```r
-install.packages(c("Matrix", "parallel", "fda"))
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your_username/DistributionalGraphicalModels.git
+   cd DistributionalGraphicalModels
+   ```
 
+2. Install required R packages:
+   ```r
+   install.packages(c("Matrix", "parallel", "fda"))
+   ```
 
+3. Compile the R source files:
+   ```r
+   file_path <- "/path/to/repository"
+   source(paste(file_path, "MAPO.cpp", sep="/"))
+   ```
+   
+## Results
+- Simulation Studies: Demonstrate the effectiveness of the proposed methods in recovering true graph structures under various dependency models.
+- rsfMRI Data Analysis: Applied to ADHD data, the methods reveal interpretable brain connectivity patterns that differentiate ADHD subjects from controls.
+
+## Citation
+If you use this code in your research, please cite (The paper will be posted to arxiv soon).
+
+## Contact
+
+For any questions or issues, please open an issue in this repository or contact dzl5618@psu.edu.
+
+## License
+This project is licensed under the MIT License.
 
 
